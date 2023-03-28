@@ -7,54 +7,59 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Comfortaa:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,900;1,1000&family=Oswald:wght@200;300;400;500;600;700&family=Silkscreen:wght@400;700&family=Tilt+Prism&display=swap" rel="stylesheet">
     <title>FootBall</title>
 </head>
 <body>
     <nav class="fixed_nav_bar">
-        <div class="navigation_aboutus"><h2 class="navigation_aboutus">О НАС</h2></div>
+        <div class="navigation_aboutus"><a class="navigationtext" href=""><h2 class="navigation_aboutus">О НАС</h2></a></div>
         <div class="navigation_namelogo">
-            <h1 class="navigation_name">ГОЛ</h1>
+            <a class="navigationtext" href=""><h1 class="navigation_name">ГОЛ</h1></a>
             <img class="navigation_logo" src="/images/icons/ball.png" alt="">
         </div>
-        <div class="navigation_contacts"><h2 class="navigation_contacts">КОНТАКТЫ</h2></div>
+        <div class="navigation_contacts"><a class="navigationtext" href=""><h2 class="navigation_contacts">КОНТАКТЫ</h2></a></div>
     </nav>
     <header class="header">
-        <div class="header_slider">
+        <!-- <div class="header_slider">
             <div class="slickslider">
                 <div class="slider_images"><img src="/images/bg/header_bg1.png" alt=""></div>
                 <div class="slider_images"><img src="/images/bg/header_bg2.png" alt=""></div>
                 <div class="slider_images"><img src="/images/bg/header_bg3.png" alt=""></div>
             </div>
-        </div>
+        </div> -->
     </header>
+    <div class="section1_name">
+        <h2 class="section1_nametext">О НАС</h2>
+    </div>
     <section class="section1">
-        <div class="section1_name">
-            <h2 class="section1_nametext">О НАС</h2>
-        </div>
         <div class="section1_block">
-            <img src="/images/img/section1img.png" alt="">
+            <img class="section1img" src="/images/img/section1img.png" alt="">
             <div class="section1_text">
                 <p class="section1_texttext">Секция "ГОЛ" занимается обучением детей от 5 до 16 лет футболу. Формируя команду, мы делаем из молодых талантов профессиональных игроков. Обучаемые игроки ежегодно участвуют в турнирах, тем самым набирая опыт и победы. Так же секция "ГОЛ" проводит развлекательные мероприятия по воспитанию в молодежи интереса к здоровому образу жизни.</p>
             </div>
         </div>
     </section>
     <section class="section2">
-        <div class="section2_name">
-            <h2 class="section2_nametext">
-                НОВОСТИ ОРГАНИЗАЦИИ
-            </h2>
-        </div>
         <div class="section2_imgs">
-            <img src="/images/img/section2img.png" alt="">
-            <img src="/images/img/section2img1.png" alt="">
+            <img class="section2_img1" src="/images/img/section2img.png" alt="">
+            <img class="section2_img2" src="/images/img/section2img1.png" alt="">
         </div>
-        <div class="section2_news">
-            <p class="section2_text">
-                • Появилась скидка 10% на обучение второго ребёнка <br>
-                • Планировка турниров на март-май <br>
-                • Добавление в график ночных тренировок <br>
-                • Добавлена фуд-корт зона <br>
-            </p>
+        <div class="section2_left">
+            <div class="section2_name">
+                <h2 class="section2_nametext">
+                    НОВОСТИ ОРГАНИЗАЦИИ
+                </h2>
+            </div>
+            <div class="section2_news">
+                <p class="section2_text">
+                    • Появилась скидка 10% на обучение второго ребёнка <br> <br>
+                    • Планировка турниров на март-май <br> <br>
+                    • Добавление в график ночных тренировок <br> <br>
+                    • Добавлена фуд-корт зона <br> <br>
+                </p>
+            </div>
         </div>
         <div class="section2_line1"></div>
         <div class="section2_line2"></div>
@@ -65,7 +70,7 @@
             <div class="section3_name">
                 <h2 class="section3_nametext">ОСТАВИТЬ ЗАЯВКУ</h2>
             </div>
-            <img src="/images/img/boy.png" alt="">
+            <img class="section3img" src="/images/img/boy.png" alt="">
         </div>
         <div class="section3_textareas">
             <textarea class="section3_textarea1" name="" id="" cols="30" rows="1">ИМЯ*</textarea>
