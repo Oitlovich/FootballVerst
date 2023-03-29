@@ -23,6 +23,10 @@ body, html{
 .display_none{
     display: none;
 }
+
+.slider_images{
+    height: 1000px;
+}
 .fixed_nav_bar{
     position: fixed;
     background-color: rgba(19, 18, 18, 0.8);
@@ -108,7 +112,7 @@ body, html{
     height: 500px;
 }
 .section2{
-    background-image: url('images/bg/section2_bg.png') 'no-repeat';
+    background-image: url(/images/bg/section2_bg.png);
     width: 100%;
     height: 860px;
     color: #fff;
@@ -218,7 +222,7 @@ body, html{
     border: 4px solid white;
 }
 .section4{
-    background-image: url('images/bg/section2_bg.png') 'no-repeat';
+    background-image: url(/images/bg/section2_bg.png);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -302,9 +306,16 @@ body, html{
     margin-left: 40px;
 }
 .section6{
-    background-image: url('images/bg/section2_bg.png') 'no-repeat';
+    background-image: url('/images/bg/section2_bg.png');
     height: 600px;
     color: #fff;
+
+}
+.secondline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
 }
 .section6_nametext{
     margin: 0;
@@ -312,6 +323,11 @@ body, html{
     justify-content: center;
     padding-top: 30px;
     font-size: 33px;
+}
+.section6_mapblock{
+    width: 800px;
+    height: 400px;
+    border: 1px solid white;
 }
 .section7{
     background-color: rgb(19, 18, 18);
@@ -357,7 +373,7 @@ body, html{
     height: 60px;
 }
 .section8{
-    background-image: url('images/bg/section8_bg.png') 'no-repeat';
+    background-image: url('/images/bg/section8_bg.png');
     background-color: rgba(0, 0, 0, 0.9);
     height: 935px;
 }
@@ -379,6 +395,7 @@ body, html{
     background-color: #fff;
     width: 360px;
     height: 420px;
+    transform: perspective(100px);
 }
 .section8_blocks_img{
     padding: 20px;
