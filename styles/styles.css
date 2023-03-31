@@ -23,11 +23,7 @@ body, html{
 .display_none{
     display: none;
 }
-.section5_blackgradient{
-    opacity: 0.9;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 16%, rgba(38,38,38,1) 40%, rgba(255,255,255,0) 100%);
-}
+
 .slider_images{
     height: 1000px;
 }
@@ -298,6 +294,45 @@ body, html{
 }
 .section5_person3{
     margin-left: 20px;
+}
+.section5_person2{
+    height: 460px;
+}
+
+.person1, .person2 , .person3, .person4{
+    position: relative;
+}
+
+.person_descr1 {
+    width: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(38,38,38,1) 40%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    transition: .3s;
+    bottom: 52px;
+}
+.person:hover .person_descr1 {
+    height: 300px;
+    transition: .3s;
+}
+.person_descr2 {
+    width: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(38,38,38,1) 40%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    transition: .3s;
+    bottom: 52px;
+}
+.person:hover .person_descr2 {
+    height: 300px;
+    transition: .3s;
+}
+.person_active {
+    display: block;
 }
 .section5_person1_text, .section5_person2_text, .section5_person3_text, .section5_person4_text{
     margin: 0;
