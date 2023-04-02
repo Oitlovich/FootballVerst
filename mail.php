@@ -1,16 +1,16 @@
 <?php
     $to = "sergeimaleev13@mail.ru";
-    $from = "sergeimaleev13@mail.ru";
+    $from = "nik2004itamalcev@gmail.com";
     $subject = "FootballVerst";
 
-    $message = htmlspecialchars($_POST['secondname']) . '\r\n' . 
-               htmlspecialchars($_POST['firstname']) . '\r\n' . 
-               htmlspecialchars($_POST['phone']) . '\r\n' . 
-               htmlspecialchars($_POST['comment']);
-
+    $message = htmlspecialchars($_POST['secondname']);
     $message = urldecode($message);
 
-    if (mail($to, $subject, $message)) {
+    $headers = "From: $from" . "\r\n" .
+    "Reply-To: $from" . "\r\n" .
+    "X-Mailer: PHP/" . phpversion();
+
+    if (mail($to, $subject, $message, $headers)) {
         echo 'Письмо отправлено';
     }
     else {
