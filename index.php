@@ -73,11 +73,13 @@
             <img class="section3img" src="images/img/boy.png" alt="">
         </div>
         <div class="section3_textareas">
-            <textarea class="section3_textarea1" name="firstname" id="1" cols="30" rows="1">ИМЯ*</textarea>
-            <textarea class="section3_textarea2" name="secondname*" id="2" cols="30" rows="1">ФАМИЛИЯ*</textarea>
-            <textarea class="section3_textarea3" name="phone" id="3" cols="30" rows="1">ТЕЛЕФОН*</textarea>
-            <textarea class="section3_textarea4" name="comment" id="4" cols="30" rows="1">КОММЕНТАРИЙ*</textarea>
-            <button class="section3_button">ОТПРАВИТЬ</button>
+            <form action="mail.php" method="post">
+                <textarea class="section3_textarea1" name="firstname" id="1" cols="30" rows="1" placeholder="ИМЯ" required></textarea>
+                <textarea class="section3_textarea2" name="secondname" id="2" cols="30" rows="1" placeholder="ФАМИЛИЯ" required></textarea>
+                <textarea class="section3_textarea3" name="phone" id="3" cols="30" rows="1" placeholder="ТЕЛЕФОН" required></textarea>
+                <textarea class="section3_textarea4" name="comment" id="4" cols="30" rows="1" placeholder="КОММЕНТАРИЙ"></textarea>
+                <input class="section3_button" type="submit" value="ОТПРАВИТЬ" />
+            </form>
         </div>
     </section>
     <section class="section4">
